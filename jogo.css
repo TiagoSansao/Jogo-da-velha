@@ -1,0 +1,115 @@
+/* Body */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1F1F1F;
+}
+
+/* Header */
+
+header {
+    width: 600px;
+    height: 100px;
+    background-color: white;
+    margin: auto;
+    border: 6px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 {
+    font-size: 60px;
+}
+header h2 {
+    font-size: 30px;
+}
+
+/* Interface */
+section#interface {
+    border: 6px solid black;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+
+section#interface div.linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+section#interface div.quadrado {
+    height: 195px;
+    width: 195px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Formas geométricas para ir dentro do quadrado */
+.bolinha {
+    width: 70%;
+    height: 70%;
+    background: blue;
+    border-radius: 50%;
+    margin: auto;
+}
+.xizinho {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    font-size: 150px;
+    font-family: arial;
+    text-align: center;
+    color: red;
+}
+
+/*Mensagem quando o jogo acaba */
+
+.fimMensagem {
+    padding: 40px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 40%;
+    background-color: grey;
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+.fimMensagem p {
+    line-height: 30px;
+}
+
+
+/* Footer */
+footer {
+    padding-top: 5px;
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    border: 6px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer h2 {
+    font-size: 20px;
+}
+footer h4 {
+    
+}
