@@ -18,6 +18,7 @@ for (let q = 0; q < 9; q++) {
                 vezDoComputador(); // Chama uma função para o computador fazer sua jogada
             }
         } else { // Caso o quadrado já esteja marcado irá mudar o fundo para vermelho para sinalizar
+            new Audio('sonoro/jogoerro.mp3').play()
             quadrado[q].style.background = "red"; // Alterar a cor de fundo do quadrado para vermelho
             setTimeout(function() {quadrado[q].style.background = 'white';}, 100); // Após 100 milissegundos com a cor vermelha, voltar para a branca
         }
@@ -98,16 +99,19 @@ function fimMensagem(resultado) {
 
 
 function venceu() { // Função executada caso jogador vença
+    new Audio('sonoro/jogovitoria.mp3').play() 
     vitoria = 1; // Armazena que a vitória foi do jogador
     reiniciar(); // Chama a função para reiniciar o jogo
     fimMensagem('Vitória')
 }
 function perdeu() { // Função executada caso jogador perca
+    new Audio('sonoro/jogoderrota.mp3').play()
     vitoria = 2; // Armazena que a vitória foi do computador
     reiniciar(); // Chama a função para reiniciar o jogo
     fimMensagem('Derrota')
 }
 function velha() { // Função executada caso empate
+    new Audio('sonoro/jogovitoria.mp3').play()  
     vitoria = 3; // Armazena que foi um empate
     reiniciar(); // Chama a função para reiniciar o jogo
     fimMensagem('Empate')
