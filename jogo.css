@@ -110,6 +110,12 @@ footer {
 footer h2 {
     font-size: 20px;
 }
-footer h4 {
-    
+
+
+/* Ad capitalista hehe */
+
+div.ad {
+    margin: auto;
+    width: 728px;
+    height: 90px;
 }
