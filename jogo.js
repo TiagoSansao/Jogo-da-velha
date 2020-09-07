@@ -14,6 +14,7 @@ for (let q = 0; q < 9; q++) {
             quadrado[q].appendChild(bolinha); // Inserir o elemento criado dentro do quadrado
             marcados[q] = 1; // Informa que o quadrado está marcado pelo jogador
             checarVitoria(1); // Checa se alguém já venceu ANTES do computador jogar.
+            new Audio("sonoro/jogoclick.mp3").play()
             if (vitoria == 0) { // Se ninguém tiver ainda vencido, o computador pode jogar
                 vezDoComputador(); // Chama uma função para o computador fazer sua jogada
             }
