@@ -1,5 +1,5 @@
->#Jogo da Velha
-##Feito em JS, HTML CSS.
+# Jogo da Velha
+## Feito em JS, HTML CSS. 
 
 > **Informações**
 * Todas as linhas do arquivo de JS estão comentadas caso alguém queira entender o código.
